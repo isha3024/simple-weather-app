@@ -23,7 +23,7 @@ const showWeather = (data) => {
 		weatherHTML.innerHTML = 
 		`<h2 class="city">Weather in ${data.name}</h2>
 		<h3 class="temp"></strong>${data.main.temp}&deg;C</strong></h3>
-		<div class="weather-icon">
+		<div class="weather-icon d-flex justify-content-center align-items-center">
 		<img src="https://openweathermap.org/img/wn/${data.weather[0].icon}.png" alt="Icon of weather" class="icon">
 		<div class="description"><strong>${data.weather[0].main}</strong></div>
 		</div>
@@ -41,7 +41,7 @@ window.onload = function(){
 	weatherHTML.innerHTML = 
 		`<h2 class="city">Weather in Vadodara</h2>
 		<h3 class="temp">31.98°C</h3>
-		<div class="weather-icon">
+		<div class="weather-icon d-flex justify-content-center align-items-center">
 		<img src="https://openweathermap.org/img/wn/04d.png" alt="Icon of weather" class="icon">
 		<div class="description"><strong>Clouds</strong></div>
 		</div>
